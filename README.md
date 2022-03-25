@@ -1,9 +1,9 @@
 # Nirapod Installer
-FIrstly run...
+- FIrstly run...
 ```bash
  composer require nirapodsoft/installer
 ```
-Secondly run..
+- Secondly run..
 ```bash
  php artisan vendor:publish --tag=nirapod-installer-config
 ```
