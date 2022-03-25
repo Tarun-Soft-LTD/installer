@@ -1,9 +1,9 @@
 <?php
 
-namespace NirapodSoft\Installer\Http\Middleware;
+namespace Nirapodsoft\Installer\Http\Middleware;
 
 use Closure;
-use NirapodSoft\Installer\Helpers\CoreRepository;
+use Nirapodsoft\Installer\Helpers\CoreRepository;
 
 class Activator{
     public function handle($request, Closure $next)

@@ -1,11 +1,11 @@
 <?php
 
-namespace NirapodSoft\Installer;
+namespace Nirapodsoft\Installer;
 
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
-use NirapodSoft\Installer\Http\Middleware\Activator;
-use NirapodSoft\Installer\Http\Middleware\canInstall;
+use Nirapodsoft\Installer\Http\Middleware\Activator;
+use Nirapodsoft\Installer\Http\Middleware\canInstall;
 
 class InstallerServiceProvider extends ServiceProvider
 {

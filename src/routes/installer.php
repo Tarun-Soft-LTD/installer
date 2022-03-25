@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use NirapodSoft\Installer\Http\Controllers\InstallController;
+use Nirapodsoft\Installer\Http\Controllers\InstallController;
 
 Route::prefix('installation')->middleware(['web','install'])->group(function(){
     Route::get('/',[InstallController::class,'index'])->name('installation');

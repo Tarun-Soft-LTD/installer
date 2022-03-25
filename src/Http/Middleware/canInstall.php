@@ -1,6 +1,6 @@
 <?php
 
-namespace NirapodSoft\Installer\Http\Middleware;
+namespace Nirapodsoft\Installer\Http\Middleware;
 
 use Closure;
 

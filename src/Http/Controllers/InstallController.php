@@ -1,6 +1,6 @@
 <?php
 
-namespace NirapodSoft\Installer\Http\Controllers;
+namespace Nirapodsoft\Installer\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -10,9 +10,9 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Artisan;
-use NirapodSoft\Installer\Helpers\CoreRepository;
-use NirapodSoft\Installer\Helpers\PermissionChecker;
-use NirapodSoft\Installer\Helpers\RequirementsChecker;
+use Nirapodsoft\Installer\Helpers\CoreRepository;
+use Nirapodsoft\Installer\Helpers\PermissionChecker;
+use Nirapodsoft\Installer\Helpers\RequirementsChecker;
 
 class InstallController extends Controller
 {

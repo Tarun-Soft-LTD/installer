@@ -1,6 +1,6 @@
 <?php
 
-namespace NirapodSoft\Installer\Helpers;
+namespace Nirapodsoft\Installer\Helpers;
 
 class RequirementsChecker{
     /**
