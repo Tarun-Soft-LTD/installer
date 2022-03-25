@@ -10,8 +10,11 @@
         }
     ],
     "autoload": {
+        "classmap": [
+            "src"
+        ],
         "psr-4": {
-            "nirapodsoft\\installer\\": "src/"
+            "Nirapodsoft\\Installer\\": "src/"
         }
     },
     "extra": { 
