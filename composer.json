@@ -1,0 +1,27 @@
+{
+    "name": "nirapodsoft/installer",
+    "description": "Laravel script installer",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nirapod Soft",
+            "email": "info@nirapodhost.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "nirapodsoft\\installer\\": "src/"
+        }
+    },
+    "extra": { 
+        "laravel": {
+            "providers": [
+                "Nirapodsoft\\Installer\\InstallerServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+    
+}
