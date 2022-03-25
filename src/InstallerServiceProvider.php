@@ -15,15 +15,13 @@ class InstallerServiceProvider extends ServiceProvider
         $router->middlewareGroup('application',[Activator::class]);
         $this->loadRoutesFrom(__DIR__.'/routes/installer.php');
         $this->loadViewsFrom(__DIR__.'/views','installer');
-        $this->publishItems();
+        if ($this->app->runningInConsole()) {
+            $this->publishes([
+                __DIR__.'/config/nirapodInstaller.php' => config_path('nirapodInstaller.php')
+            ],'nirapod-installer-config');
+        }
     }
 
-    protected function publishItems()
-    {
-        $this->publishes([
-            __DIR__.'/config/nirapodInstaller.php' => config_path('nirapodInstaller.php')
-        ],'nirapod-installer-config');
-    }
     public function register()
     {
         $this->mergeConfigFrom(__DIR__.'/config/nirapodInstaller.php','nirapodInstaller');
